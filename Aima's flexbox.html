@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: purple;
+      }
+
+      .flex-container > div {
+        background-color: pink;
+        width: 130px;
+        margin: 1px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+      .flex-item-left {
+        background-color: #f1f1f1;
+        padding: 10px;
+        flex: 50%;
+      }
+
+      .flex-item-right {
+        background-color: dodgerblue;
+        padding: 10px;
+        flex: 20%;
+      }
+
+      /* Responsive layout - makes a one column-layout instead of two-column layout */
+      @media (max-width: 800px) {
+        .flex-container {
+          flex-direction: row;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Aima's Flexbox</h1>
+
+    <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </div>
+  </body>
+</html>
